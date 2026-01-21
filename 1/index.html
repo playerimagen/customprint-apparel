@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Print | Catálogo Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --carbon-black: #0a0a0a; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--carbon-black); 
+            color: #fff; 
+            margin: 0;
+            letter-spacing: -0.01em;
+        }
+        .font-heading { font-family: 'Archivo Black', sans-serif; }
+        
+        .img-container { 
+            position: relative; 
+            overflow: hidden; 
+            background: #111; 
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.5s ease;
+        }
+
+        .img-container img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+        }
+
+        .price-tag {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 1.5rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .dtf-badge {
+            background: #fff;
+            color: #000;
+            font-size: 10px;
+            font-weight: 900;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .mini-card {
+            background: rgba(255,255,255,0.05);
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 15px;
+            border-left: 3px solid #fff;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: #fff;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 14px 28px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn:hover { background: #1da851; transform: translateY(-2px); }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-black/95 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-white text-black font-black flex items-center justify-center text-2xl">U</div>
+                <div class="flex flex-col">
+                    <span class="font-heading italic text-xl leading-none tracking-tighter">URBAN PRINT</span>
+                    <span class="text-[9px] tracking-[0.4em] text-gray-400 font-bold uppercase">By Playerimagen</span>
+                </div>
+            </div>
+            <a href="https://wa.me/525620700060" class="text-[10px] font-bold tracking-widest bg-white text-black px-4 py-2 hover:invert transition">CONTACTAR</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        
+        <header class="mb-20 text-center">
+            <h1 class="font-heading text-6xl md:text-8xl italic mb-4 opacity-90 uppercase tracking-tighter">Essentials</h1>
+            <p class="text-gray-500 tracking-[0.5em] uppercase text-xs">Colección Textiles & Accesorios</p>
+        </header>
+
+        <!-- Cuadrícula de Productos -->
+        <div class="product-grid mb-32">
+            
+            <!-- PLAYERA -->
+            <div class="flex flex-col">
+                <div class="img-container aspect-[3/4] mb-6">
+                    <img src="Playera DTF.jpeg" alt="Playera DTF" onerror="this.src='https://via.placeholder.com/600x800?text=Playera+DTF'">
+                </div>
+                <div>
+                    <span class="dtf-badge">Playera + DTF</span>
+                    <h3 class="font-heading text-2xl italic uppercase">Playera Premium</h3>
+                    <p class="price-tag">$250</p>
+                    <div class="mini-card">
+                        <img src="Playera.jpeg" alt="Playera Lisa" class="w-12 h-12 object-cover opacity-60">
+                        <div>
+                            <p class="text-[9px] text-gray-400 uppercase font-bold">Sin Impresión</p>
+                            <p class="text-sm font-bold">$125</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUDADERA -->
+            <div class="flex flex-col">
+                <div class="img-container aspect-[3/4] mb-6">
+                    <img src="Sweat DTF.jpeg" alt="Sudadera DTF" onerror="this.src='https://via.placeholder.com/600x800?text=Sweat+DTF'">
+                </div>
+                <div>
+                    <span class="dtf-badge">Sudadera + DTF</span>
+                    <h3 class="font-heading text-2xl italic uppercase">Sudadera Cuello Redondo</h3>
+                    <p class="price-tag">$385</p>
+                    <div class="mini-card">
+                        <img src="Sudadera.jpeg" alt="Sudadera Lisa" class="w-12 h-12 object-cover opacity-60">
+                        <div>
+                            <p class="text-[9px] text-gray-400 uppercase font-bold">Sin Impresión</p>
+                            <p class="text-sm font-bold">$295</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOODIE -->
+            <div class="flex flex-col">
+                <div class="img-container aspect-[3/4] mb-6">
+                    <img src="Hoodie DTF.jpeg" alt="Hoodie DTF" onerror="this.src='https://via.placeholder.com/600x800?text=Hoodie+DTF'">
+                </div>
+                <div>
+                    <span class="dtf-badge">Hoodie + DTF</span>
+                    <h3 class="font-heading text-2xl italic uppercase">Hoodie con Gorro</h3>
+                    <p class="price-tag">$425</p>
+                    <div class="mini-card">
+                        <img src="Hoodie.jpeg" alt="Hoodie Lisa" class="w-12 h-12 object-cover opacity-60">
+                        <div>
+                            <p class="text-[9px] text-gray-400 uppercase font-bold">Sin Impresión</p>
+                            <p class="text-sm font-bold">$365</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sección de Gorras -->
+        <div class="mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-zinc-900/30 p-8 border border-white/5">
+                <div class="img-container aspect-square md:aspect-video">
+                    <img src="Gorras.jpeg" alt="Gorras Urban Print" onerror="this.src='https://via.placeholder.com/800x600?text=Gorras'">
+                </div>
+                <div class="p-4">
+                    <h2 class="font-heading text-4xl italic mb-6">GORRAS & HEADWEAR</h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">Personalización en bordado y parches para Snapbacks y Truckers. Calidad de exportación en cada detalle.</p>
+                    <a href="https://wa.me/525620700060" class="whatsapp-btn">
+                        SOLICITAR COTIZACIÓN
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Promocionales -->
+        <div class="text-center py-20 border-t border-white/10">
+            <h2 class="font-heading text-3xl italic mb-12 uppercase">Artículos Promocionales</h2>
+            <div class="max-w-4xl mx-auto img-container aspect-[21/9] mb-12">
+                <img src="Promocionales.jpeg" alt="Promocionales" onerror="this.src='https://via.placeholder.com/1200x500?text=Promocionales'">
+            </div>
+            <p class="text-gray-500 text-sm tracking-widest uppercase mb-10">Tazas · Agendas · Termos · Llaveros · Y más</p>
+            <a href="https://wa.me/525620700060" class="inline-block border-2 border-white px-10 py-4 font-bold text-xs tracking-widest hover:bg-white hover:text-black transition uppercase">Descargar Catálogo Completo</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-black py-16 border-t border-white/5 text-center">
+        <p class="font-heading italic text-xl mb-4 uppercase">Urban Print</p>
+        <p class="text-gray-600 text-[10px] tracking-[0.3em] uppercase">Especialistas en Personalización Textil</p>
+        <p class="text-gray-800 text-[9px] mt-10 font-bold italic">© 2024 PLAYERIMAGEN. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+
+</body>
+</html>
